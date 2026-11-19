@@ -102,7 +102,7 @@ jobs:
         run: python3 tools/gzip_webui.py --check
 
       - name: Build firmware (all targets)
-        run: pio run -e smalltv -e smalltv_lean -e smalltv_noupdate -e smalltv_c2 -e smalltv_esp32 -e smalltv_esp32_wg -e smalltv_esp32_8mb -e smalltv_loader
+        run: pio run -e smalltv -e smalltv_lean -e smalltv_noupdate -e smalltv_c2 -e smalltv_esp32 -e smalltv_esp32_wg -e smalltv_esp32_8mb -e smalltv_loader -e smalltv_clock_ticker
 
       # smalltv_noupdate is the build option for forks that leaves the GitHub
       # self-update out (-D FW_NO_GITHUB_UPDATE). Its image must hold none of the
