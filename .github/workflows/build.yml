@@ -260,6 +260,7 @@ jobs:
           copy .pio/build/smalltv_esp32_8mb/firmware.bin dist/smalltv-mod-firmware-esp32-pro.bin
           copy .pio/build/smalltv_esp32_8mb/firmware.factory.bin dist/smalltv-mod-firmware-esp32-pro.factory.bin
           copy .pio/build/smalltv_loader/firmware.bin dist/smalltv-mod-loader.bin
+          copy .pio/build/smalltv_clock_ticker/firmware.bin dist/smalltv-clock-ticker.bin
 
       # Image headroom. Prints image / size / slot / free for every env and fails
       # when one has less than 8192 B left in its app slot. Slot sizes are read
